@@ -11,7 +11,7 @@
 [![Architecture](https://img.shields.io/badge/Architecture-BLoC%20%2B%20Clean%20Code-FF6F00)](#-arsitektur--desain-sistem)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-*A high-performance retro-themed music player engineered with Flutter, featuring deep Android native interop, custom DSP effects, and an interactive draggable floating HUD overlay designed for uninterrupted mobile gaming.*
+*Proyek pribadi pemutar musik retro modern dengan estetika pixel art, visualizer CRT real-time, dan fitur Floating Gaming HUD untuk mendengarkan lagu tanpa mengganggu game.*
 
 </div>
 
