@@ -1,34 +1,29 @@
-# Audio Assets Directory
+# 🎵 Audio Assets Directory
 
-> **Catatan Lisensi / Copyright Notice:**  
-> File audio (`.mp3`, `.wav`, dll.) diabaikan dari Git (`.gitignore`) demi kepatuhan terhadap undang-undang hak cipta serta menjaga ukuran repositori tetap ringan.
+Folder ini digunakan untuk menyimpan file audio/musik lokal yang diputar oleh aplikasi **BitBeat**.
+
+> **Catatan Lisensi & Hak Cipta:**  
+> File audio (`.mp3`, `.wav`, dll.) sengaja diabaikan oleh Git (`.gitignore`) demi kepatuhan terhadap hak cipta serta menjaga ukuran repositori tetap ringan.
 
 ---
 
-### Cara Mengisi Audio untuk Menjalankan Aplikasi
+### 📥 Panduan Cara Mengisi Audio ke Aplikasi
 
-Aplikasi **BitBeat** membaca aset lagu secara lokal dari folder ini. Untuk mendengarkan lagu, silakan letakkan file audio MP3 Anda di folder ini:
+Untuk menambahkan lagu agar dapat diputar di aplikasi:
 
-1. **Lagu Default Utama (Original)**:
-   - `d4vd_here_with_me_official.mp3`
-   - `d4vd_here_with_me_melody.mp3`
+1. **Tambahkan File Audio**:
+   - Letakkan file audio favorit Anda yang berformat `.mp3` langsung ke dalam folder ini (`assets/audio/`).
+   
+2. **Daftarkan di `pubspec.yaml`**:
+   - Pastikan path file atau folder audio terdaftar pada bagian `flutter -> assets` di file `pubspec.yaml`:
+     ```yaml
+     flutter:
+       assets:
+         - assets/audio/
+     ```
 
-2. **Daftar File Lagu Lainnya (Sesuai Track List)**:
-   - `sweater_weather_official.mp3` / `sweater_weather_melody.mp3`
-   - `505_official.mp3` / `505_melody.mp3`
-   - `the_shade_official.mp3` / `the_shade_melody.mp3`
-   - `somebody_that_i_used_to_know_official.mp3` / `somebody_that_i_used_to_know_melody.mp3`
-   - `we_fell_in_love_in_october_official.mp3` / `we_fell_in_love_in_october_melody.mp3`
-   - `her_official.mp3` / `her_melody.mp3`
-   - `december_official.mp3` / `december_melody.mp3`
-   - `lonely_official.mp3` / `lonely_melody.mp3`
-   - `love_me_not_official.mp3` / `love_me_not_melody.mp3`
-   - `my_love_mine_all_mine_official.mp3` / `my_love_mine_all_mine_melody.mp3`
-   - `nothings_new_official.mp3` / `nothings_new_melody.mp3`
-   - `somewhere_only_we_know_official.mp3` / `somewhere_only_we_know_melody.mp3`
-   - `this_side_of_paradise_official.mp3` / `this_side_of_paradise_melody.mp3`
-   - `too_sweet_official.mp3` / `too_sweet_melody.mp3`
-   - `winner_takes_it_all_official.mp3` / `winner_takes_it_all_melody.mp3`
-   - `wish_you_were_here_official.mp3` / `wish_you_were_here_melody.mp3`
+3. **Sinkronisasi Kode Playlist**:
+   - Daftarkan nama file audio pada daftar lagu / playlist aplikasi (misalnya pada file repository/bloc player).
 
-> **Tips:** Anda juga dapat menggunakan file MP3 apa pun dan mengubah namanya sesuai nama file di atas. Setelah file ditambahkan, jalankan ulang aplikasi (`flutter run`).
+4. **Jalankan Ulang Aplikasi**:
+   - Lakukan `flutter run` atau restart aplikasi agar aset audio yang baru ditambahkan terbaca secara sempurna.

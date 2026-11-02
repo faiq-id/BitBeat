@@ -27,36 +27,33 @@ Sering kali saat bermain game di Android, memutar musik di latar belakang mengha
 
 ---
 
-## 📱 Preview & Demo Aplikasi
+## 📱 Preview Aplikasi
 
 <div align="center">
   <table>
     <tr>
-      <th align="center"><b>🎮 Demo: Floating Gaming HUD (Android Overlay)</b></th>
-      <th align="center"><b>🕹️ Demo: In-App UI, Visualizer & DSP Controls</b></th>
+      <th align="center"><b>🕹️ Layar Pemutar Utama (In-App)</b></th>
+      <th align="center"><b>🎮 Kapsul Melayang (Mode Gaming)</b></th>
+      <th align="center"><b>⚡ Kontrol Deck Melayang (Expanded)</b></th>
     </tr>
     <tr>
-      <td align="center" width="50%">
-        <img src="docs/demo_gaming_hud.gif" width="280" alt="Demo Floating Gaming HUD" />
+      <td align="center" width="33%">
+        <img src="docs/screenshot_player.jpg" width="240" alt="BitBeat Player Screen" />
         <br/>
-        <sub><i>Kapsul melayang di atas layar, ekspansi deck kontrol, ganti lagu, dan tombol tutup (✕)</i></sub>
-        <br/><br/>
-        <a href="docs/demo_gaming_hud.mp4">▶️ <b>Tonton Video HD (MP4)</b></a>
+        <sub><i>Antarmuka terminal cyberpunk, visualizer real-time, dan DSP chip 8-bit</i></sub>
       </td>
-      <td align="center" width="50%">
-        <img src="docs/demo_inapp_features.gif" width="280" alt="Demo In-App Features" />
+      <td align="center" width="33%">
+        <img src="docs/screenshot_capsule.jpg" width="240" alt="Floating Capsule" />
         <br/>
-        <sub><i>Terminal visualizer real-time, aktivasi 8-Bit DSP, Sleep Timer, dan pemilihan playlist</i></sub>
-        <br/><br/>
-        <a href="docs/demo_inapp_features.mp4">▶️ <b>Tonton Video HD (MP4)</b></a>
+        <sub><i>Kapsul minimalis always-on-top melayang di atas aplikasi & game lain</i></sub>
+      </td>
+      <td align="center" width="33%">
+        <img src="docs/screenshot_gaming_hud.jpg" width="240" alt="Expanded Floating HUD Deck" />
+        <br/>
+        <sub><i>Menu kontrol cepat (Play/Pause, Next/Prev, Seekbar, dan tombol Dismiss ✕)</i></sub>
       </td>
     </tr>
   </table>
-
-  <br/>
-
-  <p align="center"><b>📸 Tampilan Antarmuka Layar Penuh (Retro Cyberpunk Terminal)</b></p>
-  <img src="docs/screenshot_player.jpg" width="300" alt="BitBeat Player Screen Screenshot" />
 </div>
 
 ---
