@@ -37,14 +37,18 @@ Sering kali saat bermain game di Android, memutar musik di latar belakang mengha
     </tr>
     <tr>
       <td align="center" width="50%">
-        <video src="docs/demo_gaming_hud.mp4" controls width="280"></video>
+        <img src="docs/demo_gaming_hud.gif" width="280" alt="Demo Floating Gaming HUD" />
         <br/>
         <sub><i>Kapsul melayang di atas layar, ekspansi deck kontrol, ganti lagu, dan tombol tutup (✕)</i></sub>
+        <br/><br/>
+        <a href="docs/demo_gaming_hud.mp4">▶️ <b>Tonton Video HD (MP4)</b></a>
       </td>
       <td align="center" width="50%">
-        <video src="docs/demo_inapp_features.mp4" controls width="280"></video>
+        <img src="docs/demo_inapp_features.gif" width="280" alt="Demo In-App Features" />
         <br/>
         <sub><i>Terminal visualizer real-time, aktivasi 8-Bit DSP, Sleep Timer, dan pemilihan playlist</i></sub>
+        <br/><br/>
+        <a href="docs/demo_inapp_features.mp4">▶️ <b>Tonton Video HD (MP4)</b></a>
       </td>
     </tr>
   </table>
