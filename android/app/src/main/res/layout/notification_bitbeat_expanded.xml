@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notif_root_expanded"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notif_capsule"
+    android:orientation="vertical"
+    android:paddingStart="13dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="11dp">
+
+    <!-- Top Row: Exact Pill Deck from Reference Image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Left Cyan Soundwave Icon -->
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_waveform_cyan" />
+
+        <!-- Title + BPM / Channel Subtitle -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notif_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.04"
+                android:maxLines="1"
+                android:text="CYBER_DRIVE.XM"
+                android:textColor="#A4EEF9"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notif_meta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:text="128 BPM • 4-CH AMIGA"
+                android:textColor="#5D7086"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 5-Bar Floating Visualizer (Cyan, Green, LightCyan, Pink, Cyan) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/eq_bar_1"
+                android:layout_width="4dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="2.5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_eq_cyan" />
+
+            <ImageView
+                android:id="@+id/eq_bar_2"
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="2.5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_eq_green" />
+
+            <ImageView
+                android:id="@+id/eq_bar_3"
+                android:layout_width="4dp"
+                android:layout_height="9dp"
+                android:layout_marginEnd="2.5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_eq_light_cyan" />
+
+            <ImageView
+                android:id="@+id/eq_bar_4"
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="2.5dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_eq_pink" />
+
+            <ImageView
+                android:id="@+id/eq_bar_5"
+                android:layout_width="4dp"
+                android:layout_height="9dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_eq_cyan" />
+        </LinearLayout>
+
+        <!-- Prev Button -->
+        <FrameLayout
+            android:id="@+id/btn_prev"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_pill_btn_dark">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_skip_prev_cyan" />
+        </FrameLayout>
+
+        <!-- Bright Cyan Pill Play / Pause Button -->
+        <LinearLayout
+            android:id="@+id/btn_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_pill_btn_cyan"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="11dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/icon_play_pause"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_pause_dark" />
+
+            <TextView
+                android:id="@+id/label_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.03"
+                android:text="PAUSE"
+                android:textColor="#06131A"
+                android:textSize="11.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Next Button -->
+        <FrameLayout
+            android:id="@+id/btn_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_pill_btn_dark">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_skip_next_cyan" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Bottom Row: Elapsed Time (01:24) + Smooth Progress Bar + Total Duration (04:02) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notif_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:text="00:00"
+            android:textColor="#1CE5FF"
+            android:textSize="10.5sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/notif_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/bg_pill_progress" />
+
+        <TextView
+            android:id="@+id/notif_len"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:text="04:00"
+            android:textColor="#788CA2"
+            android:textSize="10.5sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
